@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Chakra Petch', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-racing-red: #d71920;
+  --color-racing-red-hover: #b51218;
+  --color-charcoal-bg: #0d0d0f;
+  --color-charcoal-card: #161619;
+  --color-charcoal-border: #26262b;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0c0c0e;
+  color: #f3f4f6;
+}
+
+.font-display {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Subtle carbon fiber pattern effect for automotive accent headers */
+.bg-carbon-mesh {
+  background-image: radial-gradient(rgba(215, 25, 32, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
