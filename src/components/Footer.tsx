@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, MapPin, Phone, Instagram, Send, ShieldCheck, ChevronRight, ExternalLink } from 'lucide-react';
+import { MessageCircle, MapPin, Phone, Instagram, Send, ShieldCheck, ChevronRight, ExternalLink, Download } from 'lucide-react';
 import { STORE_LOCATION, STORE_PHONE_DISPLAY, STORE_PHONE_NUMBER, STORE_MAPS_URL } from '../data/products';
 
 export const Footer: React.FC = () => {
@@ -140,6 +140,27 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-[#d71920] shrink-0" />
                 <span className="font-mono text-zinc-300 font-semibold">{STORE_PHONE_DISPLAY}</span>
+              </div>
+            </div>
+
+            <div className="pt-3 flex items-center gap-3">
+              <img
+                src="/images/qr-gizam-suspension.png"
+                alt="QR code website Gizam Suspension Kendari"
+                width={88}
+                height={88}
+                className="h-[88px] w-[88px] rounded-md bg-white p-1"
+              />
+              <div className="space-y-1.5 text-xs">
+                <p className="font-semibold text-zinc-300">Scan untuk buka website</p>
+                <a
+                  href="/images/qr-gizam-suspension.png"
+                  download="qr-gizam-suspension.png"
+                  className="inline-flex items-center gap-1 text-[#d71920] hover:underline font-semibold"
+                >
+                  <Download className="h-3.5 w-3.5" />
+                  Unduh QR Code
+                </a>
               </div>
             </div>
 
