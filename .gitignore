@@ -29,3 +29,6 @@ coverage/
 
 # Vite
 .vite/
+
+# Netlify
+.netlify/
